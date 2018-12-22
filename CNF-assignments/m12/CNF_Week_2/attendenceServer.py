@@ -9,7 +9,7 @@ def main():
     dictionary = {}
     for row in reader:
         dictionary[row[0]] = [row[1],row[2]]
-    port = 4985
+    port = 4900
     s = socket.socket()
     s.bind((host, port))
     s.listen(1)

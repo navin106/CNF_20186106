@@ -6,7 +6,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as soc:
 def Main():
     
     # print(host)
-    port = 4985
+    port = 4900
     s = socket.socket()
     s.connect((host, port))
     message = input("-->")
