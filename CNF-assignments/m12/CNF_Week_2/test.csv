@@ -1,0 +1,3 @@
+im
+csv_reader = csv.reader(data.csv, delimiter=',')
+print(csv_reader)
