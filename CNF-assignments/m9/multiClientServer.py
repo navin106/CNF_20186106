@@ -3,13 +3,13 @@ import os
 from _thread import *
 import random
 import signal
-
 x = 0
 # global thread_count
 remote_server = "google.com"
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as soc: 
     soc.connect((remote_server, 80))
     host = soc.getsockname()[0]
+    
 def Main():
     # thread_count = 0
     

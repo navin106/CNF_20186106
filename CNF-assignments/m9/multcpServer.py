@@ -3,9 +3,10 @@ remote_server = "google.com"
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as soc: 
     soc.connect((remote_server, 80))
     host = soc.getsockname()[0]
+    
 def Main():
-    host = '10.1.133.72'
-    port = 2011
+    # host = '10.1.133.72'
+    port = 1245
     s = socket.socket()
     s.bind((host, port))
     s.listen(2)
