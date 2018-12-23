@@ -1,10 +1,13 @@
 import socket
 from threading import *
 import os,signal
+remote_server = "google.com"
+with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as soc: 
+    soc.connect((remote_server, 80))
+    host = soc.getsockname()[0]
 
 def Main():
-    host = '10.1.133.72'
-    port = 1304
+    port = 3006
     s = socket.socket()
     try:
         s.connect((host, port))
